@@ -6,6 +6,7 @@
 |---|---|---|---|---|---|
 | [chem-hotspot-script](chem-hotspot-script/README.md) | — | 2026-10-23T13:47:03+08:00 | pending | 1 | 60.5 KB |
 | [skill-e10-cli](skill-e10-cli/README.md) | — | 2026-10-23T13:47:02+08:00 | pending | 1 | 1.8 MB |
+| [skill-hub-keeper](skill-hub-keeper/README.md) | — | 2026-10-23T13:50:19+08:00 | pending | 1 | 2.7 KB |
 | [weaver-e10-builder](weaver-e10-builder/README.md) | — | 2026-10-23T13:46:49+08:00 | pending | 3 | 12.5 MB |
 
 ## 待确认分支
