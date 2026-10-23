@@ -668,9 +668,12 @@ function Invoke-Promote {
   $exists = Invoke-Git @('rev-parse', '--verify', '--quiet', $branch)
   $main = $script:Cfg.defaultBranch
 
+  # always return to the default branch first: promoting anything while sitting on
+  # a feature branch would silently commit onto that branch instead of main
+  $co = Invoke-Git @('checkout', $main)
+  if ($co.Code -ne 0) { throw "checkout $main failed: $($co.Out)" }
+
   if ($exists.Code -eq 0) {
-    $co = Invoke-Git @('checkout', $main)
-    if ($co.Code -ne 0) { throw "checkout $main failed: $($co.Out)" }
     $mg = Invoke-Git @('merge', '--no-ff', $branch, '-m', ('chore({0}): merge v{1} (confirmed)' -f $Name, $target.version))
     if ($mg.Code -ne 0) { throw "merge failed: $($mg.Out)" }
   }

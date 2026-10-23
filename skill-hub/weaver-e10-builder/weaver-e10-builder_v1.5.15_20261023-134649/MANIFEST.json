@@ -12,12 +12,12 @@
     "git":  {
                 "branch":  "",
                 "commit":  "",
-                "tag":  ""
+                "tag":  "weaver-e10-builder@v1.5.15"
             },
-    "status":  "pending",
+    "status":  "confirmed",
     "publish":  true,
-    "confirmed_by":  "",
-    "confirmed_at":  "",
+    "confirmed_by":  "YG",
+    "confirmed_at":  "2026-10-23T13:59:13+08:00",
     "tree_sha256":  "9029a7d3e4d7c2fcb891b0bf0f82e0e75712d9dd7eabfbbdff8fa977b078673f",
     "file_count":  316,
     "total_bytes":  4744317,
