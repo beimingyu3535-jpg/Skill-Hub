@@ -1,0 +1,1094 @@
+{
+  "templateName": "淡蓝水晶-完整配置示例",
+  "layoutInfo": {
+    "pageLayouts": [
+      {
+        "comps": [
+          {
+            "id": "b936a02f313c429ab64c5388709cf7f1",
+            "refCompId": "",
+            "type": "FakeField",
+            "category": "1",
+            "applyStyle": "1",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 0,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 0,
+                "nodeId": "3BmcRjDOnD"
+              },
+              "tcomId": "form_name",
+              "name": "表单名称",
+              "title": "表单名称",
+              "type": "FakeField"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "aa538542ba9545afb9934907a382b3c3",
+            "type": "RepeatMark",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 0,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 1,
+                "nodeId": "-PRXLdq_SB"
+              },
+              "tcomId": "main_repeat_start",
+              "name": "主表字段重复开始标识",
+              "title": "主表字段重复开始标识",
+              "type": "RepeatMark"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "d54eec26f45341a6bb40e374f23a6363",
+            "refCompId": "",
+            "type": "InternalTitle",
+            "category": "1",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 1,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 2,
+                "nodeId": "-HLkBLHfbb"
+              },
+              "associatedId": "main_field1",
+              "name": "主表字段标题1",
+              "type": "InternalTitle",
+              "title": "主表字段标题1"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "d1b3ca2981c64242b1546916be3354ce",
+            "type": "FakeField",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 2,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 2,
+                "nodeId": "hqR71pNpKG"
+              },
+              "tcomId": "main_field1",
+              "associatedId": "main_field1",
+              "name": "主表字段1",
+              "title": "主表字段1",
+              "type": "FakeField"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "e2517147c08e482bbd3b7609b3dd4e29",
+            "refCompId": "",
+            "type": "InternalTitle",
+            "category": "1",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 3,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 2,
+                "nodeId": "74IrPL3Lts"
+              },
+              "associatedId": "main_field2",
+              "name": "主表字段标题2",
+              "type": "InternalTitle",
+              "title": "主表字段标题2"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "a65468cf176444f8b137201e0260bd59",
+            "type": "FakeField",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 4,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 2,
+                "nodeId": "wEgi2GZzur"
+              },
+              "tcomId": "main_field2",
+              "associatedId": "main_field2",
+              "name": "主表字段2",
+              "comId": "main_field2",
+              "title": "主表字段2",
+              "type": "FakeField"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "c7d8eb71a37e4102888aaba1805257c4",
+            "type": "RepeatMark",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 0,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 3,
+                "nodeId": "KeFDaejC5B"
+              },
+              "tcomId": "main_repeat_end",
+              "name": "主表字段重复结束标识",
+              "title": "主表字段重复结束标识",
+              "type": "RepeatMark"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "f836dfcbf6924ba1afd346cc5bd37369",
+            "type": "RepeatMark",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 0,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 5,
+                "nodeId": "m3pWRi8IVB"
+              },
+              "tcomId": "detail_repeat_start",
+              "name": "明细表重复开始标识",
+              "title": "明细表重复开始标识",
+              "type": "RepeatMark"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "b81d1d38a67e4f9191767c970615da96",
+            "type": "DetailTable",
+            "category": "213",
+            "refModule": "",
+            "tenantKey": "t82kg113nu",
+            "styleCategoryCompKey": "DetailTableStyleConfig",
+            "styleCategoryPackage": "@weapp/formbuilder",
+            "applyStyle": "30",
+            "isCover": 0,
+            "config": {
+              "defaultPageSize": "20",
+              "duplicatedField": [],
+              "showSerial": true,
+              "defaultRows": "3",
+              "allowAdd": true,
+              "totalLine": [],
+              "type": "DetailTable",
+              "title": "明细表0",
+              "required": false,
+              "mergedFields": [],
+              "dataKey": "mxb0",
+              "tcomId": "main_detailarea",
+              "thArray": [
+                233,
+                233
+              ],
+              "subFormId": "814328878992621569",
+              "associatedId": "814328878992621569",
+              "maxRows": "",
+              "isLayOut": true,
+              "mobileScroll": true,
+              "allowEdit": true,
+              "comId": "main_detailarea",
+              "layoutDetail": [
+                "0",
+                "1"
+              ],
+              "componentKey": "DataTable",
+              "flow": {
+                "linkedNodes": {},
+                "nodes": [],
+                "isCanvas": true
+              },
+              "isImport": false,
+              "allowDelete": true,
+              "display": true,
+              "enableCardEdit": true,
+              "frozenColumn": "",
+              "enablePaging": false,
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "isNewVersion": false,
+              "excel": {
+                "col": 1,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "isLayOut": true,
+                "excelTable": [
+                  {
+                    "col": 0,
+                    "row": 0,
+                    "type": "de_titletext"
+                  },
+                  {
+                    "col": 0,
+                    "row": 1,
+                    "type": "de_checkall"
+                  },
+                  {
+                    "col": 1,
+                    "row": 1,
+                    "type": "de_serialtitle"
+                  },
+                  {
+                    "col": 2,
+                    "row": 0,
+                    "type": "de_btn"
+                  },
+                  {
+                    "col": 0,
+                    "row": 2,
+                    "type": "de_title"
+                  },
+                  {
+                    "col": 0,
+                    "row": 4,
+                    "type": "de_tail"
+                  },
+                  {
+                    "col": 0,
+                    "row": 3,
+                    "type": "de_checksingle"
+                  },
+                  {
+                    "col": 1,
+                    "row": 3,
+                    "type": "de_serialnum"
+                  }
+                ],
+                "row": 6,
+                "nodeId": "vGPgha1qV3"
+              },
+              "requiredRows": "1",
+              "pcScroll": true,
+              "name": "明细表区域",
+              "allowCopy": true,
+              "describe": ""
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "ea2dba724ede4c16b009808993bed6f2",
+            "type": "RepeatMark",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 0,
+                "parent": "ROOT",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 8,
+                "nodeId": "XV-d2h1BC7"
+              },
+              "tcomId": "detail_repeat_end",
+              "name": "明细表重复结束标识",
+              "title": "明细表重复结束标识",
+              "type": "RepeatMark"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "d4aac7f2f8fd458dadeef6eba9c43c73",
+            "type": "FakeField",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 2,
+                "parent": "vGPgha1qV3",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 1,
+                "nodeId": "qT_7Njzlyk"
+              },
+              "tcomId": "detail_field_title",
+              "name": "明细表字段标题",
+              "title": "明细表字段标题",
+              "type": "FakeField"
+            },
+            "package": "@weapp/formbuilder"
+          },
+          {
+            "id": "ff1763a0097645c89df60a80297b4e2e",
+            "type": "FakeField",
+            "tenantKey": "t82kg113nu",
+            "isCover": 0,
+            "config": {
+              "layout": {
+                "hidden": false,
+                "wrapped": false
+              },
+              "excel": {
+                "col": 2,
+                "parent": "vGPgha1qV3",
+                "linkedNodes": {},
+                "nodes": [],
+                "row": 3,
+                "nodeId": "BQWbRGS-mQ"
+              },
+              "tcomId": "detail_field_repeat_x",
+              "t_Type": "d_repeat",
+              "name": "明细表字段横向迭代",
+              "title": "明细表字段横向迭代",
+              "type": "FakeField"
+            },
+            "package": "@weapp/formbuilder"
+          }
+        ],
+        "id": "-1",
+        "pageId": "-1",
+        "layoutType": "EXCEL",
+        "terminalType": "PC",
+        "rightCompIds": [],
+        "module": "FORM",
+        "config": {
+          "workbook": {
+            "Sheet1": {
+              "rows": [
+                {
+                  "size": 130,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 50,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                }
+              ],
+              "columns": [
+                {
+                  "type": "percent",
+                  "size": 4,
+                  "visible": true,
+                  "defaultWidth": 40
+                },
+                {
+                  "type": "percent",
+                  "size": 10,
+                  "visible": true,
+                  "defaultWidth": 130
+                },
+                {
+                  "type": "percent",
+                  "size": 36,
+                  "visible": true,
+                  "defaultWidth": 355
+                },
+                {
+                  "type": "percent",
+                  "size": 10,
+                  "visible": true,
+                  "defaultWidth": 130
+                },
+                {
+                  "type": "percent",
+                  "size": 36,
+                  "visible": true,
+                  "defaultWidth": 355
+                },
+                {
+                  "type": "percent",
+                  "size": 4,
+                  "visible": true,
+                  "defaultWidth": 40
+                }
+              ],
+              "cells": [
+                {
+                  "row": "0",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "foreColor": "#5D9CEC",
+                    "hAlign": 1,
+                    "font": "700 22px Arial",
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "b936a02f313c429ab64c5388709cf7f1",
+                      "type": "FakeField"
+                    }
+                  }
+                },
+                {
+                  "row": "1",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "backColor": "#5D9CEC",
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "aa538542ba9545afb9934907a382b3c3",
+                      "type": "RepeatMark"
+                    }
+                  }
+                },
+                {
+                  "row": "2",
+                  "col": "1",
+                  "value": null,
+                  "style": {
+                    "backColor": "#f1f7ff",
+                    "borderLeft": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderTop": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderRight": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "textIndent": 2,
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "d54eec26f45341a6bb40e374f23a6363",
+                      "type": "InternalTitle"
+                    }
+                  }
+                },
+                {
+                  "row": "2",
+                  "col": "2",
+                  "value": null,
+                  "style": {
+                    "borderLeft": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderTop": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderRight": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "textIndent": 2,
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "d1b3ca2981c64242b1546916be3354ce",
+                      "type": "FakeField"
+                    }
+                  }
+                },
+                {
+                  "row": "2",
+                  "col": "3",
+                  "value": null,
+                  "style": {
+                    "backColor": "#f1f7ff",
+                    "borderLeft": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderTop": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderRight": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "textIndent": 2,
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "e2517147c08e482bbd3b7609b3dd4e29",
+                      "type": "InternalTitle"
+                    }
+                  }
+                },
+                {
+                  "row": "2",
+                  "col": "4",
+                  "value": null,
+                  "style": {
+                    "borderLeft": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderTop": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderRight": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#d1deef",
+                      "style": 1
+                    },
+                    "textIndent": 2,
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "a65468cf176444f8b137201e0260bd59",
+                      "type": "FakeField"
+                    }
+                  }
+                },
+                {
+                  "row": "3",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "backColor": "#5D9CEC",
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "c7d8eb71a37e4102888aaba1805257c4",
+                      "type": "RepeatMark"
+                    }
+                  }
+                },
+                {
+                  "row": "5",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "backColor": "#FFAA00",
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "f836dfcbf6924ba1afd346cc5bd37369",
+                      "type": "RepeatMark"
+                    }
+                  }
+                },
+                {
+                  "row": "6",
+                  "col": "1",
+                  "value": null,
+                  "style": {
+                    "borderLeft": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "borderTop": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "borderRight": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "b81d1d38a67e4f9191767c970615da96",
+                      "type": "DetailTable"
+                    }
+                  }
+                },
+                {
+                  "row": "6",
+                  "col": "2",
+                  "style": {
+                    "borderTop": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    }
+                  }
+                },
+                {
+                  "row": "6",
+                  "col": "3",
+                  "style": {
+                    "borderTop": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    }
+                  }
+                },
+                {
+                  "row": "6",
+                  "col": "4",
+                  "style": {
+                    "borderTop": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "borderRight": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#e5e5e5",
+                      "style": 1
+                    }
+                  }
+                },
+                {
+                  "row": "8",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "backColor": "#FFAA00",
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "ea2dba724ede4c16b009808993bed6f2",
+                      "type": "RepeatMark"
+                    }
+                  }
+                }
+              ],
+              "rowCount": 12,
+              "columnCount": 6,
+              "spans": [
+                {
+                  "row": 0,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 6
+                },
+                {
+                  "row": 1,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 6
+                },
+                {
+                  "row": 3,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 6
+                },
+                {
+                  "row": 5,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 6
+                },
+                {
+                  "row": 8,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 6
+                },
+                {
+                  "row": 6,
+                  "rowCount": 1,
+                  "col": 1,
+                  "colCount": 4
+                }
+              ]
+            },
+            "b81d1d38a67e4f9191767c970615da96": {
+              "rows": [
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 35,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                },
+                {
+                  "size": 40,
+                  "visible": true
+                },
+                {
+                  "size": 30,
+                  "visible": true
+                }
+              ],
+              "columns": [
+                {
+                  "type": "fixed",
+                  "size": 40,
+                  "visible": true
+                },
+                {
+                  "type": "fixed",
+                  "size": 40,
+                  "visible": true
+                },
+                {
+                  "type": "fixed",
+                  "size": 180,
+                  "visible": true
+                }
+              ],
+              "cells": [
+                {
+                  "row": "0",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_titletext"
+                    }
+                  }
+                },
+                {
+                  "row": "0",
+                  "col": "2",
+                  "value": null,
+                  "style": {
+                    "hAlign": 2,
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_btn"
+                    }
+                  }
+                },
+                {
+                  "row": "1",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "backColor": "#F1F7FF",
+                    "hAlign": 1,
+                    "borderTop": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_checkall"
+                    }
+                  }
+                },
+                {
+                  "row": "1",
+                  "col": "1",
+                  "value": null,
+                  "style": {
+                    "backColor": "#F1F7FF",
+                    "foreColor": "#333333",
+                    "hAlign": 1,
+                    "borderTop": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_serialtitle"
+                    }
+                  }
+                },
+                {
+                  "row": "1",
+                  "col": "2",
+                  "value": null,
+                  "style": {
+                    "backColor": "#F1F7FF",
+                    "foreColor": "#333333",
+                    "borderTop": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "borderBottom": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "d4aac7f2f8fd458dadeef6eba9c43c73",
+                      "type": "FakeField"
+                    }
+                  }
+                },
+                {
+                  "row": "2",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "backColor": "#4DC8EB",
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_title"
+                    }
+                  }
+                },
+                {
+                  "row": "3",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "hAlign": 1,
+                    "borderBottom": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_checksingle"
+                    }
+                  }
+                },
+                {
+                  "row": "3",
+                  "col": "1",
+                  "value": null,
+                  "style": {
+                    "hAlign": 1,
+                    "borderBottom": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_serialnum"
+                    }
+                  }
+                },
+                {
+                  "row": "3",
+                  "col": "2",
+                  "value": null,
+                  "style": {
+                    "borderBottom": {
+                      "color": "#ebebeb",
+                      "style": 1
+                    },
+                    "cellType": {
+                      "allowOverflow": false,
+                      "comId": "ff1763a0097645c89df60a80297b4e2e",
+                      "type": "FakeField"
+                    }
+                  }
+                },
+                {
+                  "row": "4",
+                  "col": "0",
+                  "value": null,
+                  "style": {
+                    "backColor": "#4DC8EB",
+                    "cellType": {
+                      "allowOverflow": false,
+                      "type": "de_tail"
+                    }
+                  }
+                }
+              ],
+              "rowCount": 5,
+              "columnCount": 3,
+              "spans": [
+                {
+                  "row": 0,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 2
+                },
+                {
+                  "row": 2,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 3
+                },
+                {
+                  "row": 4,
+                  "rowCount": 1,
+                  "col": 0,
+                  "colCount": 3
+                }
+              ]
+            }
+          },
+          "ebCodeFileTypes": [
+            "css"
+          ],
+          "dataset": []
+        },
+        "sysVariable": {}
+      }
+    ],
+    "marks": {
+      "main_repeat_start": {
+        "row": 1,
+        "col": 0,
+        "item": {
+          "id": "main_repeat_start",
+          "name": "主表字段重复开始标识",
+          "icon": "Icon-bd-formstart"
+        }
+      },
+      "main_repeat_end": {
+        "row": 3,
+        "col": 0,
+        "item": {
+          "id": "main_repeat_end",
+          "name": "主表字段重复结束标识",
+          "icon": "Icon-bd-formend"
+        }
+      },
+      "detail_repeat_start": {
+        "row": 5,
+        "col": 0,
+        "item": {
+          "id": "detail_repeat_start",
+          "name": "明细表重复开始标识",
+          "icon": "Icon-bd-liststart"
+        }
+      },
+      "detail_repeat_end": {
+        "row": 8,
+        "col": 0,
+        "item": {
+          "id": "detail_repeat_end",
+          "name": "明细表重复结束标识",
+          "icon": "Icon-bd-listend"
+        }
+      }
+    },
+    "formStyle": {
+      "styleConfig": {
+        "field": {
+          "inputStyle": {
+            "border": {
+              "border": "0px none transparent",
+              "borderTop": "0px none transparent",
+              "borderBottom": "0px none transparent",
+              "borderLeft": "0px none transparent",
+              "borderRight": "0px none transparent"
+            },
+            "width": "100%",
+            "background-color": "#ffffff00"
+          },
+          "browserStyle": {
+            "border": {
+              "border": "0px none transparent",
+              "borderTop": "0px none transparent",
+              "borderBottom": "0px none transparent",
+              "borderLeft": "0px none transparent",
+              "borderRight": "0px none transparent"
+            },
+            "min-width": "100%",
+            "background-color": "#ffffff00"
+          }
+        }
+      }
+    }
+  },
+  "cssSource": ".ebpage {\r\n  --primary: #5d9cec;\r\n  --btn-primary-hover-bg: var(--primary);\r\n  --checkbox-active-border-color: var(--primary);\r\n  --radio-active-border-color: var(--primary);\r\n  --title-icon-border: calc(var(--hd)*1) solid var(--primary);\r\n  --checkbox-active-background-color: var(--primary);\r\n  --radio-active-inner-background-color:  var(--primary);\r\n  --switch-checked-bc: var(--primary);\r\n  --switch-checked-border:  var(--primary);\r\n  --input-focus-shadow: var(--primary);\r\n  --input-focus-border-color: var(--primary);\r\n  --m-chk-check-bc:var(--primary);\r\n  --m-chk-check-border-color: var(--primary);\r\n  --m-switch-checked-bc:var(--primary);\r\n}\r\n/* 明细表隔行颜色 */\r\n.weapp-form-detail-table-wrapper .excelTableView-content-excel-table tbody tr[data-id]:nth-child(even),\r\n/* 明细表固定列背景 */\r\n.weapp-form-detail-table-wrapper .excelTableView-content-excel-table tbody tr[data-id]:nth-child(even) .excelTableView-fixed-col,\r\n.weapp-form-detail-table-wrapper .excelTableView-content-excel-table tbody tr[data-id]:nth-child(even) .excelTableView-fixed-head,\r\n.excelTableView-content__head-row {\r\n  background-color: #FBFBFB;\r\n}\r\n"
+}

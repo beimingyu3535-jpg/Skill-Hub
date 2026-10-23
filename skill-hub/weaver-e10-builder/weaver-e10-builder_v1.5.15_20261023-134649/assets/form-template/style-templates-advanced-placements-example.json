@@ -1,0 +1,30 @@
+{
+  "templateName": "三组并排加一组整行",
+  "headerTitle": "formTitle",
+  "sectionTitle": "基本信息",
+  "columnWidthsPercent": [5, 8, 22, 8, 22, 8, 22, 5],
+  "fieldPlacements": [
+    { "pair": 1, "title": { "row": 0, "col": 1 }, "field": { "row": 0, "col": 2 } },
+    { "pair": 2, "title": { "row": 0, "col": 3 }, "field": { "row": 0, "col": 4 } },
+    { "pair": 3, "title": { "row": 0, "col": 5 }, "field": { "row": 0, "col": 6 } },
+    { "pair": 4, "title": { "row": 1, "col": 1, "colSpan": 6 }, "field": { "row": 2, "col": 1, "colSpan": 6 } }
+  ],
+  "detailTable": {
+    "enabled": true,
+    "title": "明细信息",
+    "columnWidthsPx": [80, 80, 220, 80],
+    "fieldRepeatDirection": "horizontal",
+    "fieldTitlePosition": { "row": 1, "col": 2 },
+    "fieldRepeatPosition": { "row": 3, "col": 2 },
+    "controlPositions": {
+      "de_titletext": { "row": 0, "col": 0 },
+      "de_serialtitle": { "row": 1, "col": 0 },
+      "de_checkall": { "row": 1, "col": 1 },
+      "de_btn": { "row": 1, "col": 3 },
+      "de_title": { "row": 2, "col": 0 },
+      "de_serialnum": { "row": 3, "col": 0 },
+      "de_checksingle": { "row": 3, "col": 1 },
+      "de_tail": { "row": 4, "col": 0 }
+    }
+  }
+}

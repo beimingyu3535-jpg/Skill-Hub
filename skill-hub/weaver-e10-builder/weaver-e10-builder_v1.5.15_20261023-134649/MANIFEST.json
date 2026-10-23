@@ -1,0 +1,38 @@
+{
+    "name":  "weaver-e10-builder",
+    "version":  "1.5.15",
+    "version_source":  "frontmatter",
+    "snapshot_id":  "weaver-e10-builder_v1.5.15_20261023-134649",
+    "snapshot_at":  "2026-10-23T13:46:49+08:00",
+    "source":  {
+                   "type":  "localEdit",
+                   "from":  "C:\\Users\\YW\\.dsh\\skills\\weaver-e10-builder",
+                   "raw":  ""
+               },
+    "git":  {
+                "branch":  "",
+                "commit":  "",
+                "tag":  ""
+            },
+    "status":  "pending",
+    "publish":  true,
+    "confirmed_by":  "",
+    "confirmed_at":  "",
+    "tree_sha256":  "9029a7d3e4d7c2fcb891b0bf0f82e0e75712d9dd7eabfbbdff8fa977b078673f",
+    "file_count":  316,
+    "total_bytes":  4744317,
+    "diffstat":  "A35 M27 D2 (= 254)",
+    "excluded":  [
+                     "node_modules",
+                     "__pycache__",
+                     ".git",
+                     ".pytest_cache",
+                     "*.tmp",
+                     "*.log",
+                     "Thumbs.db",
+                     ".DS_Store",
+                     "desktop.ini"
+                 ],
+    "parent_version":  "1.5.11",
+    "note":  "current live version"
+}

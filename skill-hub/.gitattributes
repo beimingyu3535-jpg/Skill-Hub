@@ -1,0 +1,11 @@
+# 关键：快照内容必须逐字节保真，否则 tree_sha256 与活目录对不上，audit 会误报漂移。
+# 因此关闭一切换行/编码规范化。
+* -text
+*.db  binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary

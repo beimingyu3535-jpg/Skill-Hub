@@ -1,0 +1,39 @@
+{
+    "name":  "skill-e10-cli",
+    "version":  "1.2",
+    "version_source":  "filename",
+    "snapshot_id":  "skill-e10-cli_v1.2_20261023-134702",
+    "snapshot_at":  "2026-10-23T13:47:02+08:00",
+    "source":  {
+                   "type":  "installZip",
+                   "from":  "C:\\Users\\YW\\AppData\\Local\\Temp\\skillhub-fa2dd09f05824d20bfd0149b0e694dc1\\skill-e10-cli",
+                   "raw":  "skill-e10-cli 1.2.zip"
+               },
+    "git":  {
+                "branch":  "",
+                "commit":  "",
+                "tag":  ""
+            },
+    "status":  "pending",
+    "publish":  true,
+    "confirmed_by":  "",
+    "confirmed_at":  "",
+    "tree_sha256":  "2de6ae9ffce569a267551de5d84502621af5e3585538ec81b31dc3d6f0d2a9fd",
+    "file_count":  146,
+    "total_bytes":  1858041,
+    "diffstat":  "+146 new files",
+    "excluded":  [
+                     "node_modules",
+                     "__pycache__",
+                     ".git",
+                     ".pytest_cache",
+                     "*.tmp",
+                     "*.log",
+                     "Thumbs.db",
+                     ".DS_Store",
+                     "desktop.ini"
+                 ],
+    "parent_version":  "",
+    "note":  "imported from skill-e10-cli 1.2.zip",
+    "_dir":  "E:\\知识库\\skill-hub\\skill-e10-cli\\skill-e10-cli_v1.2_20261023-134702"
+}

@@ -1,0 +1,39 @@
+{
+    "name":  "chem-hotspot-script",
+    "version":  "1.0",
+    "version_source":  "filename",
+    "snapshot_id":  "chem-hotspot-script_v1.0_20261023-134703",
+    "snapshot_at":  "2026-10-23T13:47:03+08:00",
+    "source":  {
+                   "type":  "installZip",
+                   "from":  "C:\\Users\\YW\\AppData\\Local\\Temp\\skillhub-f674de4ebf0c4bbaa9398f080e169151\\chem-hotspot-script",
+                   "raw":  "chem-hotspot-script_skill_v1.0_20260914.zip"
+               },
+    "git":  {
+                "branch":  "",
+                "commit":  "",
+                "tag":  ""
+            },
+    "status":  "pending",
+    "publish":  true,
+    "confirmed_by":  "",
+    "confirmed_at":  "",
+    "tree_sha256":  "93b20f6e2d469183469a9be7bfa8b3f5c3981fd312a177f4f7e45d40e0e67219",
+    "file_count":  5,
+    "total_bytes":  61950,
+    "diffstat":  "+5 new files",
+    "excluded":  [
+                     "node_modules",
+                     "__pycache__",
+                     ".git",
+                     ".pytest_cache",
+                     "*.tmp",
+                     "*.log",
+                     "Thumbs.db",
+                     ".DS_Store",
+                     "desktop.ini"
+                 ],
+    "parent_version":  "",
+    "note":  "imported from chem-hotspot-script_skill_v1.0_20260914.zip",
+    "_dir":  "E:\\知识库\\skill-hub\\chem-hotspot-script\\chem-hotspot-script_v1.0_20261023-134703"
+}

@@ -1,0 +1,10 @@
+{
+  "event": {
+    "type": "ApproveTrigger",
+    "params": {
+      "workflowPath": {"id": "918953925665800192", "name": "采购合同报备"},
+      "triggerTiming": "workflow_completed"
+    }
+  },
+  "actions": []
+}

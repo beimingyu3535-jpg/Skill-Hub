@@ -1,0 +1,38 @@
+{
+    "name":  "weaver-e10-builder",
+    "version":  "1.2.5",
+    "version_source":  "frontmatter",
+    "snapshot_id":  "weaver-e10-builder_v1.2.5_20261023-134647",
+    "snapshot_at":  "2026-10-23T13:46:47+08:00",
+    "source":  {
+                   "type":  "legacyBackup",
+                   "from":  "E:\\知识库\\skill-hub\\_archive\\legacy-skill-backups\\weaver-e10-builder-1.2.5-20261023-102253\\weaver-e10-builder",
+                   "raw":  ""
+               },
+    "git":  {
+                "branch":  "",
+                "commit":  "",
+                "tag":  ""
+            },
+    "status":  "archived",
+    "publish":  true,
+    "confirmed_by":  "",
+    "confirmed_at":  "",
+    "tree_sha256":  "849cebec04415f7bef82a37f84640b8871e7955b6f2088b25b702f2c172ce682",
+    "file_count":  268,
+    "total_bytes":  4085335,
+    "diffstat":  "+268 new files",
+    "excluded":  [
+                     "node_modules",
+                     "__pycache__",
+                     ".git",
+                     ".pytest_cache",
+                     "*.tmp",
+                     "*.log",
+                     "Thumbs.db",
+                     ".DS_Store",
+                     "desktop.ini"
+                 ],
+    "parent_version":  "",
+    "note":  "legacy backup import; content not verified"
+}

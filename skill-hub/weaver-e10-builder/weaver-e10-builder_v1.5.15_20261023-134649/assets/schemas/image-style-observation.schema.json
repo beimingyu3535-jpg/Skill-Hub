@@ -1,0 +1,1355 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "E10 Image Style Observation v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "issues"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "e10.image-styles/v1"
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "backgroundColor"
+      ],
+      "properties": {
+        "backgroundColor": {
+          "type": "string",
+          "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+        }
+      }
+    },
+    "cells": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sheet",
+          "row",
+          "col",
+          "style"
+        ],
+        "properties": {
+          "sheet": {
+            "type": "string",
+            "minLength": 1
+          },
+          "row": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1999
+          },
+          "col": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          },
+          "style": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "color": {
+                "type": "string",
+                "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+              },
+              "backgroundColor": {
+                "type": "string",
+                "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+              },
+              "fontFamily": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "fontSize": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 200
+              },
+              "fontUnit": {
+                "enum": [
+                  "px",
+                  "pt"
+                ]
+              },
+              "fontWeight": {
+                "enum": [
+                  "normal",
+                  "bold",
+                  100,
+                  200,
+                  300,
+                  400,
+                  500,
+                  600,
+                  700,
+                  800,
+                  900
+                ]
+              },
+              "bold": {
+                "type": "boolean",
+                "description": "字体粗细别名；不会转换为下划线"
+              },
+              "fontStyle": {
+                "enum": [
+                  "normal",
+                  "italic"
+                ]
+              },
+              "textAlign": {
+                "enum": [
+                  "left",
+                  "center",
+                  "right"
+                ]
+              },
+              "align": {
+                "enum": [
+                  "left",
+                  "center",
+                  "right"
+                ]
+              },
+              "verticalAlign": {
+                "enum": [
+                  "top",
+                  "middle",
+                  "bottom"
+                ]
+              },
+              "wordWrap": {
+                "type": "boolean"
+              },
+              "underline": {
+                "type": "boolean"
+              },
+              "border": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "borderTop": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "borderBottom": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "borderLeft": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "borderRight": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "anyOf": [
+          {
+            "required": [
+              "fieldId"
+            ]
+          },
+          {
+            "required": [
+              "fieldName"
+            ]
+          }
+        ],
+        "allOf": [
+          {
+            "anyOf": [
+              {
+                "required": [
+                  "title"
+                ]
+              },
+              {
+                "required": [
+                  "content"
+                ]
+              },
+              {
+                "required": [
+                  "input"
+                ]
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "fieldId": {
+            "type": "string",
+            "pattern": "^[1-9][0-9]*$"
+          },
+          "fieldName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subFormId": {
+            "type": "string",
+            "pattern": "^[1-9][0-9]*$"
+          },
+          "title": {
+            "$ref": "#/$defs/style",
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "height"
+                  ]
+                },
+                {
+                  "required": [
+                    "width"
+                  ]
+                }
+              ]
+            }
+          },
+          "content": {
+            "$ref": "#/$defs/style",
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "height"
+                  ]
+                },
+                {
+                  "required": [
+                    "width"
+                  ]
+                }
+              ]
+            }
+          },
+          "input": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "backgroundColor": {
+                "type": "string",
+                "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+              },
+              "height": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 2000
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 2000
+              },
+              "border": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "textArea": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "rows"
+            ],
+            "properties": {
+              "rows": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 50
+              },
+              "fitCell": {
+                "type": "boolean"
+              },
+              "autoHeight": {
+                "type": "boolean"
+              }
+            }
+          },
+          "displayTitle": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "inputTarget": {
+            "enum": [
+              "component",
+              "cell"
+            ]
+          }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "imageWidth",
+        "imageHeight",
+        "sheets"
+      ],
+      "properties": {
+        "imageWidth": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "imageHeight": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "sheets": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 50,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "sheet",
+              "xLines",
+              "yLines",
+              "regions"
+            ],
+            "properties": {
+              "sheet": {
+                "type": "string",
+                "minLength": 1
+              },
+              "xLines": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 257,
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "yLines": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2001,
+                "items": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              },
+              "regions": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 100000,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row",
+                    "col",
+                    "rowCount",
+                    "colCount"
+                  ],
+                  "properties": {
+                    "row": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "col": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "rowCount": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "colCount": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "style": {
+                      "$ref": "#/$defs/style"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "componentStyles": {
+      "enum": [
+        "merge",
+        "replace",
+        "workbookOnly"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "tableBorders": {
+      "type": "array",
+      "maxItems": 1000,
+      "description": "逐个声明表格正文范围及四侧外框；不包含新增留白列，明确没有表格时使用空数组。缺失表示尚未观察。",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sheet",
+          "row",
+          "col",
+          "rowCount",
+          "colCount",
+          "top",
+          "right",
+          "bottom",
+          "left"
+        ],
+        "properties": {
+          "sheet": {
+            "type": "string",
+            "minLength": 1
+          },
+          "row": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "col": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "rowCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "colCount": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "top": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "enum": [
+                  "none",
+                  "unknown"
+                ]
+              }
+            ]
+          },
+          "right": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "enum": [
+                  "none",
+                  "unknown"
+                ]
+              }
+            ]
+          },
+          "bottom": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "enum": [
+                  "none",
+                  "unknown"
+                ]
+              }
+            ]
+          },
+          "left": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "color",
+                  "width",
+                  "line"
+                ],
+                "properties": {
+                  "color": {
+                    "type": "string",
+                    "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+                  },
+                  "width": {
+                    "enum": [
+                      1,
+                      2,
+                      3
+                    ]
+                  },
+                  "line": {
+                    "enum": [
+                      "solid",
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "line": {
+                          "enum": [
+                            "dashed",
+                            "dotted",
+                            "double"
+                          ]
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "width": {
+                          "maximum": 2
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "enum": [
+                  "none",
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "style": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "type": "string",
+          "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+        },
+        "fontFamily": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "fontSize": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 200
+        },
+        "fontUnit": {
+          "enum": [
+            "px",
+            "pt"
+          ]
+        },
+        "fontWeight": {
+          "enum": [
+            "normal",
+            "bold",
+            100,
+            200,
+            300,
+            400,
+            500,
+            600,
+            700,
+            800,
+            900
+          ]
+        },
+        "bold": {
+          "type": "boolean",
+          "description": "字体粗细别名；不会转换为下划线"
+        },
+        "fontStyle": {
+          "enum": [
+            "normal",
+            "italic"
+          ]
+        },
+        "textAlign": {
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ]
+        },
+        "align": {
+          "enum": [
+            "left",
+            "center",
+            "right"
+          ]
+        },
+        "verticalAlign": {
+          "enum": [
+            "top",
+            "middle",
+            "bottom"
+          ]
+        },
+        "wordWrap": {
+          "type": "boolean"
+        },
+        "underline": {
+          "type": "boolean"
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 2000
+        },
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 2000
+        },
+        "border": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "color",
+            "width",
+            "line"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+            },
+            "width": {
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "line": {
+              "enum": [
+                "solid",
+                "dashed",
+                "dotted",
+                "double"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "line": {
+                    "enum": [
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "width": {
+                    "maximum": 2
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "borderTop": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "color",
+            "width",
+            "line"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+            },
+            "width": {
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "line": {
+              "enum": [
+                "solid",
+                "dashed",
+                "dotted",
+                "double"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "line": {
+                    "enum": [
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "width": {
+                    "maximum": 2
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "borderBottom": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "color",
+            "width",
+            "line"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+            },
+            "width": {
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "line": {
+              "enum": [
+                "solid",
+                "dashed",
+                "dotted",
+                "double"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "line": {
+                    "enum": [
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "width": {
+                    "maximum": 2
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "borderLeft": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "color",
+            "width",
+            "line"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+            },
+            "width": {
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "line": {
+              "enum": [
+                "solid",
+                "dashed",
+                "dotted",
+                "double"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "line": {
+                    "enum": [
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "width": {
+                    "maximum": 2
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "borderRight": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "color",
+            "width",
+            "line"
+          ],
+          "properties": {
+            "color": {
+              "type": "string",
+              "description": "支持 #RGB、#RRGGBB、rgb(r,g,b) 及 red/white/black/blue/gray/grey/green"
+            },
+            "width": {
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "line": {
+              "enum": [
+                "solid",
+                "dashed",
+                "dotted",
+                "double"
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "line": {
+                    "enum": [
+                      "dashed",
+                      "dotted",
+                      "double"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "width": {
+                    "maximum": 2
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

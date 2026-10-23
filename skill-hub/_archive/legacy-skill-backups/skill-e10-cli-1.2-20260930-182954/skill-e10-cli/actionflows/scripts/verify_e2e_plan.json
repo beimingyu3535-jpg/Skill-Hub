@@ -1,0 +1,11 @@
+{
+  "event": {
+    "type": "SimpleScheduler",
+    "params": {
+      "rate": "1",
+      "hour": ["2"],
+      "cycle": "1"
+    }
+  },
+  "actions": []
+}

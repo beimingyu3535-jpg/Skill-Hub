@@ -1,0 +1,33 @@
+.ebpage {
+  --primary: #2F6FED;
+  --btn-primary-hover-bg: #2557BF;
+  --checkbox-active-border-color: var(--primary);
+  --checkbox-active-background-color: var(--primary);
+  --radio-active-border-color: var(--primary);
+  --radio-active-inner-background-color: var(--primary);
+  --switch-checked-bc: var(--primary);
+  --switch-checked-border: var(--primary);
+  --input-focus-border-color: var(--primary);
+}
+
+.weapp-form-detail-table-wrapper .excelTableView-content-excel-table thead th,
+.weapp-form-detail-table-wrapper .excelTableView-content-excel-table thead td {
+  background-color: #E7F0FF;
+  color: #173A70;
+}
+
+.weapp-form-detail-table-wrapper .excelTableView-content-excel-table tbody tr[data-id]:nth-child(even) > td {
+  background-color: #F1F7FF;
+}
+
+.weapp-form-detail-table-wrapper .excelTableView-content-excel-table tbody tr[data-id]:first-child > td {
+  background-color: #EAF3FF;
+}
+
+.weapp-form-detail-table-wrapper .excelTableView-content-excel-table tbody tr[data-id]:hover > td {
+  background-color: #DCEBFF;
+}
+
+.weapp-form-detail-table-wrapper .excelTableView-content-excel-table tbody tr[data-id]:focus-within > td {
+  background-color: #CFE3FF;
+}

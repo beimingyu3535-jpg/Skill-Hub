@@ -1,0 +1,25 @@
+{
+  "templateName": "主表一二一交替与明细表",
+  "fieldRows": [[1], [2, 3], [4]],
+  "headerTitle": "formTitle",
+  "columnWidthsPercent": [4, 12, 34, 12, 34, 4],
+  "detailTable": {
+    "enabled": true,
+    "title": "明细信息",
+    "rowHeightPx": 36,
+    "columnWidthsPx": [80, 80, 220],
+    "fieldRepeatDirection": "horizontal",
+    "fieldTitlePosition": { "row": 1, "col": 2 },
+    "fieldRepeatPosition": { "row": 3, "col": 2 },
+    "controlPositions": {
+      "de_titletext": { "row": 0, "col": 0 },
+      "de_btn": { "row": 0, "col": 2 },
+      "de_checkall": { "row": 1, "col": 0 },
+      "de_serialtitle": { "row": 1, "col": 1 },
+      "de_title": { "row": 2, "col": 0 },
+      "de_checksingle": { "row": 3, "col": 0 },
+      "de_serialnum": { "row": 3, "col": 1 },
+      "de_tail": { "row": 4, "col": 0 }
+    }
+  }
+}

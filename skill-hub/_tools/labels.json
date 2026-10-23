@@ -1,0 +1,66 @@
+{
+  "readme": {
+    "title": "# {name}",
+    "meta": [
+      ["技能名", "{name}"],
+      ["当前确认版本", "{currentVersion}"],
+      ["最新快照", "{latestSnapshot}"],
+      ["状态", "{status}"],
+      ["来源", "{source}"],
+      ["活目录", "{livePath}"],
+      ["文件数 / 体积", "{fileCount} / {humanSize}"],
+      ["最后更新", "{updatedAt}"]
+    ],
+    "versionsHeader": "## 版本一览",
+    "cols": ["版本", "快照目录", "时间", "状态", "说明"],
+    "quickUse": "## 快速使用",
+    "noSnapshot": "（暂无快照）"
+  },
+  "changelog": {
+    "title": "# CHANGELOG · {name}",
+    "summary": "**变更摘要**",
+    "diffstat": "**diffstat**",
+    "snapshot": "**快照**",
+    "git": "**git**",
+    "confirm": "**确认**",
+    "source": "**来源**",
+    "note": "**备注**",
+    "pending": "待确认（分支已提交，未合入 main）",
+    "confirmed": "已确认并合入 main",
+    "archived": "历史归档（未校验）",
+    "unversioned": "未定版"
+  },
+  "index": {
+    "title": "# Skill Hub 索引",
+    "note": "> 本文件由 `_tools/skillhub.ps1 index` 自动生成，请勿手工编辑。",
+    "cols": ["技能", "当前确认版本", "最新快照时间", "状态", "快照数", "体积"],
+    "pendingBranches": "待确认分支",
+    "pendingPush": "待推送提交",
+    "inbox": "待归档 (_inbox)",
+    "none": "（无）"
+  },
+  "punct": {
+    "colon": "：",
+    "dash": "—",
+    "dot": " · "
+  },
+  "status": {
+    "pending": "pending",
+    "confirmed": "confirmed",
+    "archived": "archived",
+    "unversioned": "unversioned",
+    "active": "active",
+    "deprecated": "deprecated"
+  },
+  "source": {
+    "localEdit": "本地修改",
+    "installZip": "安装包",
+    "legacyBackup": "历史手工备份",
+    "manualImport": "手工导入"
+  },
+  "msg": {
+    "askSnapshot": "是否现在归档这个技能到 Skill Hub？",
+    "askInstall": "是否把安装包归档到 Skill Hub？",
+    "hintUpdated": "（检测到技能有改动，建议执行 snapshot）"
+  }
+}

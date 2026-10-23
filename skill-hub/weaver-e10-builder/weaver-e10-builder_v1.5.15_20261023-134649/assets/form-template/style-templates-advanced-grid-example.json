@@ -1,0 +1,39 @@
+{
+  "main": {
+    "rowHeights": [{ "row": 8, "px": 40 }],
+    "merge": [{ "row": 8, "col": 0, "rowCount": 1, "colCount": 2 }],
+    "cells": [
+      {
+        "row": 8,
+        "col": 0,
+        "text": "说明文字",
+        "fontFamily": "宋体",
+        "fontSizePx": 14,
+        "bold": true,
+        "italic": true,
+        "underline": true,
+        "textColor": "#404040ed",
+        "verticalAlign": "top",
+        "wordWrap": true,
+        "borders": {
+          "left": { "color": "#000", "line": "medium" },
+          "top": { "color": "#000", "line": "dashed" }
+        }
+      },
+      {
+        "row": 9,
+        "col": 2,
+        "systemParameter": "formTitle",
+        "backgroundColor": "#d9d9d9",
+        "textColor": "#7687a0",
+        "font": "italic 700 20px 宋体",
+        "verticalAlign": "bottom",
+        "wordWrap": false,
+        "borders": {
+          "left": { "color": "#75d048", "line": "medium" },
+          "top": { "color": "#75d048", "line": "medium" }
+        }
+      }
+    ]
+  }
+}

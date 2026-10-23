@@ -1,0 +1,53 @@
+{
+  "page": {
+    "backgroundColor": "#f0f1f4",
+    "showReadOnlyPlaceholder": true,
+    "showReadOnlyBackground": true
+  },
+  "field": {
+    "spacingBottomPx": 0,
+    "content": {
+      "border": { "widthPx": 1, "color": "#e2e2e2" },
+      "radiusPx": 3,
+      "paddingLeftPx": 6,
+      "paddingRightPx": 6,
+      "paddingTopPx": 1,
+      "paddingBottomPx": 1
+    }
+  },
+  "detailTable": {
+    "paddingTopPx": 24,
+    "paddingBottomPx": 24,
+    "paddingLeftPx": 24,
+    "paddingRightPx": 24
+  },
+  "detailFields": {
+    "spacingBottomPx": 0,
+    "content": { "paddingRightPx": 16, "border": "none" },
+    "input": { "backgroundColor": "#ffffff00", "border": "none" },
+    "browser": { "backgroundColor": "#ffffff00", "border": "none" }
+  },
+  "group": {
+    "title": {
+      "fontWeight": 700,
+      "backgroundColor": "#ffffff00",
+      "bottomBorder": { "widthPx": 1, "color": "#1c69db" },
+      "paddingTopPx": 16,
+      "paddingBottomPx": 4,
+      "paddingLeftPx": 0
+    },
+    "icon": {
+      "path": "#Icon-sign2-o",
+      "fontSizePx": 28,
+      "color": "#1c69db",
+      "radiusPx": 3,
+      "fillType": "none",
+      "borderColor": "#65C8D0",
+      "backgroundColor": "#65C8D0",
+      "displayType": "suffer"
+    },
+    "background": { "color": "#ffffff", "radiusPx": 6 },
+    "content": { "marginLeftPx": -24, "marginRightPx": -24, "paddingTopPx": 24, "paddingBottomPx": 22 },
+    "spacing": { "marginTopPx": 0, "marginBottomPx": 0, "paddingTopPx": 0, "paddingLeftPx": 24, "paddingRightPx": 24 }
+  }
+}

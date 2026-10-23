@@ -1,0 +1,16 @@
+# skill-hub ignore rules
+node_modules/
+__pycache__/
+.pytest_cache/
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
+desktop.ini
+*.bak
+*.orig
+_demo/
+_scratch/
+
+# never track the push queue working file
+_pending/*.lock
