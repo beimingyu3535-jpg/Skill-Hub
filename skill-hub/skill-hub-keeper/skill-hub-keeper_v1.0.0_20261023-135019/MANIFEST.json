@@ -12,12 +12,12 @@
     "git":  {
                 "branch":  "",
                 "commit":  "",
-                "tag":  ""
+                "tag":  "skill-hub-keeper@v1.0.0"
             },
-    "status":  "pending",
+    "status":  "confirmed",
     "publish":  true,
-    "confirmed_by":  "",
-    "confirmed_at":  "",
+    "confirmed_by":  "YG",
+    "confirmed_at":  "2026-10-23T13:50:46+08:00",
     "tree_sha256":  "569f58d65c59cfa00c13fc729358a7670135c202976fc5d18df7fb63f703e3dc",
     "file_count":  1,
     "total_bytes":  2780,
