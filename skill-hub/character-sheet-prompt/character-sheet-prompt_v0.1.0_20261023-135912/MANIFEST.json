@@ -1,0 +1,38 @@
+{
+    "name":  "character-sheet-prompt",
+    "version":  "0.1.0",
+    "version_source":  "frontmatter",
+    "snapshot_id":  "character-sheet-prompt_v0.1.0_20261023-135912",
+    "snapshot_at":  "2026-10-23T13:59:12+08:00",
+    "source":  {
+                   "type":  "localEdit",
+                   "from":  "C:\\Users\\YW\\.dsh\\skills\\character-sheet-prompt",
+                   "raw":  ""
+               },
+    "git":  {
+                "branch":  "",
+                "commit":  "",
+                "tag":  ""
+            },
+    "status":  "pending",
+    "publish":  true,
+    "confirmed_by":  "",
+    "confirmed_at":  "",
+    "tree_sha256":  "18042e99aa9c560f2947fc8082b303a1a5c7922fac14d2611b3c7c2296d52b72",
+    "file_count":  1,
+    "total_bytes":  3026,
+    "diffstat":  "+1 new files",
+    "excluded":  [
+                     "node_modules",
+                     "__pycache__",
+                     ".git",
+                     ".pytest_cache",
+                     "*.tmp",
+                     "*.log",
+                     "Thumbs.db",
+                     ".DS_Store",
+                     "desktop.ini"
+                 ],
+    "parent_version":  "",
+    "note":  "from _inbox 人物卡生成skill draft"
+}
