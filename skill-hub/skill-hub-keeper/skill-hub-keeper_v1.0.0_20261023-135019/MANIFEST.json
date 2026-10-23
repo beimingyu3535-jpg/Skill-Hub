@@ -1,0 +1,38 @@
+{
+    "name":  "skill-hub-keeper",
+    "version":  "1.0.0",
+    "version_source":  "frontmatter",
+    "snapshot_id":  "skill-hub-keeper_v1.0.0_20261023-135019",
+    "snapshot_at":  "2026-10-23T13:50:19+08:00",
+    "source":  {
+                   "type":  "localEdit",
+                   "from":  "C:\\Users\\YW\\.dsh\\skills\\skill-hub-keeper",
+                   "raw":  ""
+               },
+    "git":  {
+                "branch":  "",
+                "commit":  "",
+                "tag":  ""
+            },
+    "status":  "pending",
+    "publish":  true,
+    "confirmed_by":  "",
+    "confirmed_at":  "",
+    "tree_sha256":  "569f58d65c59cfa00c13fc729358a7670135c202976fc5d18df7fb63f703e3dc",
+    "file_count":  1,
+    "total_bytes":  2780,
+    "diffstat":  "+1 new files",
+    "excluded":  [
+                     "node_modules",
+                     "__pycache__",
+                     ".git",
+                     ".pytest_cache",
+                     "*.tmp",
+                     "*.log",
+                     "Thumbs.db",
+                     ".DS_Store",
+                     "desktop.ini"
+                 ],
+    "parent_version":  "",
+    "note":  "meta skill: skill hub archive keeper"
+}
